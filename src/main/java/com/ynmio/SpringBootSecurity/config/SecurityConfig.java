@@ -33,15 +33,6 @@ public class SecurityConfig {
     public PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }
-//    @Bean
-//    public UserDetailsService userDetailsService(){
-//        UserDetails normalUser= User.builder().username("Neeraj").password(passwordEncoder()
-//                .encode("bail")).roles("USER").build();
-//
-//        UserDetails adminUser=User.builder().username("aNeeraj").password(passwordEncoder()
-//                .encode("aBail")).roles("ADMIN").build();
-//        return new InMemoryUserDetailsManager(normalUser,adminUser);
-//    }
 
     @Bean
     public UserDetailsService userDetailsService(){
